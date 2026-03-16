@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orihuela Gestión Técnico Administrativa</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+.icono{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:50px;
+height:50px;
+border-radius:50%;
+margin:8px;
+text-decoration:none;
+font-size:22px;
+color:white;
+transition:0.3s;
+}
+
+.icono:hover{
+transform:scale(1.1);
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.facebook{
+background:#1877F2;
+}
+
+.correo{
+background:#EA4335;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+margin:0;
+background:#E8D7B7;
+color:#333;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:#7A0C0C;
+color:white;
+text-align:center;
+padding:35px 20px;
+}
+
+header img{
+width:520px;
+max-width:95%;
+display:block;
+margin:auto;
+margin-bottom:15px;
+background:white;
+padding:12px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h2{
+margin:4px;
+font-weight:600;
+}
+
+header h3{
+margin:4px;
+color:#E8D7B7;
+}
+
+/* MENÚ */
+
+nav{
+background:#8A0000;
+padding:14px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a{
+color:white;
+margin:0 18px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#E8D7B7;
+}
+
+/* SECCIONES */
+
+section{
+padding:50px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+/* TARJETAS */
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.12);
+margin-bottom:35px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* TITULOS */
+
+h3{
+color:#B68A2C;
+margin-top:0;
+}
+
+/* LISTAS */
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+/* MAPA */
+
+.mapa{
+width:100%;
+border-radius:10px;
+margin-top:10px;
+}
+
+/* BADGES */
+
+.badge{
+display:inline-block;
+padding:9px 16px;
+border-radius:8px;
+color:white;
+margin:6px;
+font-size:14px;
+font-weight:bold;
+}
+
+.rojo{background:#d9534f;}
+.amarillo{background:#f0ad4e;}
+.verde{background:#5cb85c;}
+
+/* CONTACTO */
+
+.contact-links a{
+display:inline-block;
+margin-top:6px;
+text-decoration:none;
+color:#8A0000;
+font-weight:600;
+}
+
+.contact-links a:hover{
+text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+background:#7A0C0C;
+color:white;
+text-align:center;
+padding:35px 20px;
+margin-top:40px;
+font-size:14px;
+}
+
+footer p{
+margin:6px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:700px){
+
+nav a{
+display:block;
+margin:8px 0;
+}
+
+header img{
+width:240px;
+}
+
+section{
+padding:35px 15px;
+}
+
+}
+
+.iconos-contacto{
+margin-top:20px;
+text-align:center;
+}
+
+.icono{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:55px;
+height:55px;
+border-radius:50%;
+margin:10px;
+font-size:24px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.icono:hover{
+transform:scale(1.15);
+}
+
+.whatsapp{background:#25D366;}
+.facebook{background:#1877F2;}
+.gmail{background:#EA4335;}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo_orihuela.jpg">
+
+<h2>Fidel Arturo Orihuela Vega</h2>
+<h3>Técnico en Administración</h3>
+
+<p>Consultoría en Gestión Territorial  |  Diagnóstico Comunitario  |  Planeación Técnica de Proyectos Sociales</p>
+
+</header>
+
+
+<nav>
+
+<a href="#perfil">Perfil</a>
+<a href="#servicios">Servicios de Consultoría</a>
+<a href="#proyecto">Proyecto Realizado</a>
+<a href="#metodologia">Metodología</a>
+<a href="#diagnostico">Diagnóstico</a>
+<a href="#mapa">Mapa Territorial</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+<section id="perfil">
+
+<div class="card">
+
+<h3>Perfil Profesional</h3>
+
+<p style="text-align:justify;">
+Operador técnico de alto valor que desarrolla actividades en el ámbito de la gestión técnico administrativa, enfocado en la organización territorial, el análisis de información comunitaria y la elaboración de diagnósticos que contribuyen a la planeación de proyectos y programas sociales.
+</p>
+
+<p style="text-align:justify;">
+Cuenta con formación técnica en administración obtenida en el <strong>C.B.T.i.s. No. 65 de Coatepec, Veracruz</strong>, con experiencia en trabajo de campo, coordinación operativa y elaboración de instrumentos técnicos para la toma de decisiones.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="servicios">
+
+<div class="card">
+
+<h3>Servicios de Consultoría</h3>
+
+<p style="text-align:justify;">
+Servicios orientados al diagnóstico territorial, levantamiento de información comunitaria y elaboración de instrumentos técnicos que apoyan la planeación y toma de decisiones en proyectos sociales y comunitarios.
+</p>
+
+<ul>
+
+<li>Diagnóstico Territorial Comunitario</li>
+
+<li>Georreferenciación de Infraestructura Social</li>
+
+<li>Levantamiento de Información en Campo</li>
+
+<li>Elaboración de Informes Técnicos</li>
+
+<li>Planeación y Organización de Proyectos Comunitarios</li>
+
+<li>Presentación Digital de Proyectos Sociales</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<section id="proyecto">
+
+<div class="card">
+
+<h3>Proyecto Realizado</h3>
+
+<p><strong>Diagnóstico Territorial de Casas de Salud</strong></p>
+
+<p style="text-align:justify;">
+
+Se realizó un levantamiento territorial y diagnóstico técnico de 20 Casas de Salud del municipio de Tuxpan, Veracruz, mediante visitas de campo, registro de información operativa y georreferenciación de cada unidad.
+
+<p style="text-align:justify;">
+
+El trabajo se desarrolló a través de actividades de acompañamiento técnico y participación en recorridos de campo, orientados al levantamiento y organización de información territorial.
+</p>
+
+<p style="text-align:justify;">
+
+El objetivo fue identificar condiciones de infraestructura, 
+operatividad y necesidades prioritarias para fortalecer los 
+servicios de atención en comunidades rurales.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section id="metodologia">
+
+<div class="card">
+
+<h3>Metodología de Trabajo</h3>
+
+<p style="text-align:justify;">
+
+Los procesos de diagnóstico territorial se desarrollan mediante 
+un enfoque técnico basado en trabajo de campo, levantamiento de 
+información comunitaria y análisis sistemático de datos, con el 
+objetivo de generar información confiable para la planeación de 
+proyectos sociales.
+
+</p>
+
+<ul>
+
+<li>Identificación territorial del área de intervención</li>
+
+<li>Visita y reconocimiento de campo</li>
+
+<li>Levantamiento de información comunitaria</li>
+
+<li>Registro y sistematización de datos</li>
+
+<li>Elaboración de diagnóstico técnico</li>
+
+<li>Presentación de resultados para la toma de decisiones</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="diagnostico">
+
+<div class="card">
+
+<h3>Diagnóstico Territorial – Casas de Salud</h3>
+
+<p style="text-align:justify;">
+Se realizó un diagnóstico territorial de <strong>20 Casas de Salud del municipio de Tuxpan, Veracruz</strong>, mediante visitas de campo, levantamiento de información y georreferenciación de cada unidad.
+</p>
+
+<p style="text-align:justify;">
+El análisis permitió identificar necesidades prioritarias mediante un sistema de <strong>semaforización técnica</strong>.
+</p>
+
+<p style="text-align:center;">
+
+<span class="badge rojo">Prioridad Alta</span>
+<span class="badge amarillo">Prioridad Media</span>
+<span class="badge verde">Condición Operativa</span>
+
+</p>
+
+<p style="text-align:justify;">
+Esta metodología permite visualizar de forma clara las necesidades de infraestructura, mantenimiento y fortalecimiento de las Casas de Salud en comunidades rurales.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="mapa">
+
+<div class="card">
+
+<h3>Mapa Territorial de Casas de Salud</h3>
+
+<p style="text-align:justify;">
+El mapa georreferenciado muestra la distribución de las 20 Casas de Salud del municipio de Tuxpan, Veracruz. La información fue obtenida mediante trabajo de campo y levantamiento de información territorial.
+</p>
+
+<img src="mapa_casas_salud_tuxpan_real.png" class="mapa">
+
+<p>
+
+<strong>Fuente del mapa interactivo:</strong>
+
+<br><br>
+
+🌎 <a href="https://earth.google.com/web/data=MkEKPwo9CiExeVZZOGVkMWlOSW1OUG9VVmxjcFp5aGIwaTR3QjUtYUUSFgoUMEE2RDg2QUE5MzNFMjM2RUIyNDcgAUICCABKCAjH-OShBhAB?authuser=0" target="_blank">
+
+Ver mapa completo en Google Earth
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="contacto">
+
+<div class="card">
+
+<h3>Contacto</h3>
+
+<p><strong>Orihuela Gestión Técnico Administrativa</strong></p>
+
+<p>
+Responsable:<br>
+<strong>Técnico en Administración  |  Fidel Arturo Orihuela Vega</strong>
+</p>
+
+<p>Gestión Territorial | Diagnóstico Comunitario | Planeación Técnica de Proyectos Sociales</p>
+
+<div class="contact-links">
+
+<p>
+
+<i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> 
+<strong>WhatsApp:</strong><br>
+<a href="https://wa.me/527205488189" target="_blank">
+525655922277
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-brands fa-facebook" style="color:#1877F2;"></i> 
+<strong>Facebook:</strong><br>
+<a href="https://www.facebook.com/OrihuelaGestionTecnicoAdministrativa" target="_blank">
+Orihuela Gestión Técnico Administrativa
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-envelope" style="color:#EA4335;"></i> 
+<strong>Correo Electrónico:</strong><br>
+<a href="mailto:orihuelagestion@gmail.com">
+orihuelagestion@gmail.com
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-location-dot" style="color:#d9534f;"></i>
+<strong>Ubicación:</strong><br>
+
+<a href="https://maps.app.goo.gl/QjuzUgBKbdrY7VPb9" target="_blank">
+Capulhuac, Estado de México
+</a>
+
+</p>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.926228653645!2d-99.465737!3d19.198284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8e9f0f3e4a6f%3A0x8c0b3e7d7c7c7c7c!2sCapulhuac%2C%20Estado%20de%20México!5e0!3m2!1ses!2smx!4v1710000000000!5m2!1ses!2smx"
+width="100%"
+height="350"
+style="border:0; border-radius:10px; margin-top:15px;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+
+<p style="text-align:center; margin-top:25px;">
+
+<a href="https://wa.me/525655922277" target="_blank"
+style="background:#25D366; color:white; padding:12px 22px;
+border-radius:6px; text-decoration:none; font-weight:bold;">
+
+Contactar por WhatsApp
+
+</a>
+
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p><strong>Orihuela Gestión Técnico Administrativa</strong></p>
+
+<p>“Organización, diagnóstico y planeación para fortalecer el desarrollo comunitario.”</p>
+
+<p>"Lo que no se diagnostica, no se puede mejorar; lo que no se documenta, no se puede justificar."</p>
+
+<p>© 2026</p>
+
+</footer>
+
+</body>
+</html>
+
+
